@@ -58,8 +58,11 @@ p {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .lightbox-img-wrapper {
-  margin: 10% auto 0;
+  margin: 50px auto 0;
   position: relative;
+}
+#lightbox-img {
+  max-width: 100%;
 }
 #lightbox-title {
   position: absolute;
