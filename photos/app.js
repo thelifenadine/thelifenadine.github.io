@@ -86,7 +86,7 @@
 
       lightboxImg.addEventListener("load", function() {
         document.getElementById('lightbox-title').textContent = photo.title;
-      }, false);
+      });
 
       var src = document.createAttribute('src');
       src.value = 'https://farm'
@@ -121,13 +121,13 @@
 
     var addEventListeners = function() {
       document.getElementById('lightbox-next')
-        .addEventListener('click', function(){ onClickLightBoxNext() }, true);
+        .addEventListener('click', function(){ onClickLightBoxNext() });
 
       document.getElementById('lightbox-previous')
-        .addEventListener('click', function(){ onClickLightBoxPrevious() }, true);
+        .addEventListener('click', function(){ onClickLightBoxPrevious() });
 
       document.getElementById('lightbox-close')
-        .addEventListener('click', function(){ onClickLightBoxClose() }, true);
+        .addEventListener('click', function(){ onClickLightBoxClose() });
     };
 
     return {
